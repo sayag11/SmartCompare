@@ -695,7 +695,9 @@ $scope.CompareModels = function(){
     return true;
 };
 
-
+$scope.isTie = function() {
+    return !($scope.first_selected_Item.winner || $scope.second_selected_Item.winner);
+}
 
 });
 
